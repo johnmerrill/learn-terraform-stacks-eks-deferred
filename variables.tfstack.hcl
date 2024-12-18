@@ -13,12 +13,23 @@ variable "region" {
   type = string
 }
 
-variable "role_arn" {
-  type = string
+variable "access_key" {
+  description = "AWS access key"
+  type     = string
+  ephemeral = true
 }
 
-variable "identity_token" {
-  type      = string
+variable "secret_key" {
+  description = "AWS sensitive secret key."
+  type     = string
+  sensitive = true
+  ephemeral = true
+}
+
+variable "session_token" {
+  description = "AWS session token."
+  type     = string
+  sensitive = true
   ephemeral = true
 }
 
