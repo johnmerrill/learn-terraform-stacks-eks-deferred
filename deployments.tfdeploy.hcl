@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 store "varset" "tokens" {
-  id       = "varset-varset-Afp1DkmyYfYMkHiR"
+  id       = "varset-Afp1DkmyYfYMkHiR"
   category = "env"
 }
 
