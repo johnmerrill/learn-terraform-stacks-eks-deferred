@@ -16,6 +16,7 @@ variable "region" {
 variable "access_key" {
   description = "AWS access key"
   type     = string
+  sensitive = true
   ephemeral = true
 }
 
