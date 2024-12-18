@@ -20,10 +20,9 @@ provider "aws" "main" {
   config {
     region = var.region
 
-    assume_role_with_web_identity {
-      role_arn           = var.role_arn
-      web_identity_token = var.identity_token
-    }
+    access_key = var.access_key
+    secret_key = var.secret_key
+    token = var.session_token
 
     default_tags {
       tags = var.default_tags
